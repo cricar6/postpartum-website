@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900|Nunito:400,700,900');
+$nunito: 'Nunito',
+sans-serif;
+$muli: 'Muli',
+sans-serif;
+$primary :#F28C8F;
+$primaryDark :#A36166;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $nunito;
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.contApp {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100vw;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    min-height: 80px;
+    max-height: 80px;
+    /* Rectangle */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        width: 175px;
+        height: 60px;
+        background: #F28C8F;
+        margin-left: 10px;
+    }
+    .menuContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        .menu {
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    margin: 0 15px;
+                    a {
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: $primaryDark;
+                    }
+                    a.focus {
+                        background: $primary;
+                        color: #fff;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+        .outstanding {
+            background: $primary;
+            border: none;
+            font-weight: bold;
+            font-size: 18px;
+            color: #FFFFFF;
+            padding: 0 20px;
+            height: 80px;
+        }
+        .socialMedia {
+            display: flex;
+            flex-direction: row;
+            background: $primary;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 250px;
+            height: 50px;
+            border-radius: 0px 0px 50px 50px;
+            position: absolute;
+            bottom: -50px;
+            right: 200;
+            a {
+                .icon {
+                    margin: 0 10px;
+                    width: 20px;
+                    height: 20px;
+                    background: #FFFFFF;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+.lowerBar {
+    position: fixed;
+    bottom: 50;
+    right: 0;
+    z-index: 2;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 50px 0px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            margin: 0 15px;
+            a {
+                display: flex;
+                flex-direction: row;
+                .icon {
+                    margin: 0 10px;
+                    width: 20px;
+                    height: 20px;
+                    background: $primary;
+                    border-radius: 20px;
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: $primaryDark;
+                }
+            }
+            a.focus {
+                p {
+                    background: $primary;
+                    color: #fff;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+    .outstanding {
+        height: 100%;
+        padding: 0 50px;
+        background: #F28C8F;
+        border-radius: 50px 0px 0px 50px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #FFFFFF;
+        border: none;
+    }
+}
+
+.app {
+    position: relative;
+    width: 100vw;
+    overflow-y: scroll;
+    .slider {
+        height: 1500px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700,900|Nunito:400,700,900");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+* li {
+  list-style: none;
+}
+
+* li a {
+  text-decoration: none;
+}
+
+.contApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 80px;
+  max-height: 80px;
+  /* Rectangle */
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  width: 175px;
+  height: 60px;
+  background: #F28C8F;
+  margin-left: 10px;
+}
+
+header .menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+}
+
+header .menuContainer .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .menuContainer .menu ul li {
+  margin: 0 15px;
+}
+
+header .menuContainer .menu ul li a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #A36166;
+}
+
+header .menuContainer .menu ul li a.focus {
+  background: #F28C8F;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+header .menuContainer .outstanding {
+  background: #F28C8F;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 0 20px;
+  height: 80px;
+}
+
+header .menuContainer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #F28C8F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 0px 0px 50px 50px;
+  position: absolute;
+  bottom: -50px;
+  right: 200;
+}
+
+header .menuContainer .socialMedia a .icon {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.lowerBar {
+  position: fixed;
+  bottom: 50;
+  right: 0;
+  z-index: 2;
+  height: 50px;
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 50px 0px 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lowerBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.lowerBar ul li {
+  margin: 0 15px;
+}
+
+.lowerBar ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.lowerBar ul li a .icon {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  background: #F28C8F;
+  border-radius: 20px;
+}
+
+.lowerBar ul li a p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #A36166;
+}
+
+.lowerBar ul li a.focus p {
+  background: #F28C8F;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.lowerBar .outstanding {
+  height: 100%;
+  padding: 0 50px;
+  background: #F28C8F;
+  border-radius: 50px 0px 0px 50px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.app {
+  position: relative;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+.app .slider {
+  height: 1500px;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
