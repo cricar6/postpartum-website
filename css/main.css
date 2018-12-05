@@ -14,6 +14,10 @@
   text-decoration: none;
 }
 
+* button {
+  cursor: pointer;
+}
+
 .contApp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,6 +429,84 @@ header .menuContainer .socialMedia a .icon {
 .app .serviceAdition a {
   text-decoration: none;
   color: #A36166;
+}
+
+.app .helpSuperContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 40px 0;
+}
+
+.app .helpSuperContainer .helpContainer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.app .helpSuperContainer .helpContainer .title {
+  min-width: 50%;
+  width: 50%;
+  line-height: 86px;
+  font-size: 90px;
+  color: #564956;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.app .helpSuperContainer .helpContainer .helpLine {
+  min-width: 50%;
+  width: 50%;
+  background: #564956;
+  color: #FFFFFF;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .helpSuperContainer .helpContainer .helpLine p.outstanding {
+  font-size: 36px;
+}
+
+.app .helpSuperContainer .helpContainer .helpLine button {
+  background: #F28C8F;
+  border: none;
+  border-radius: 20px;
+  width: 115px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 footer {

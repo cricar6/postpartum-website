@@ -5,17 +5,20 @@ $muli: 'Muli',
 sans-serif;
 $primary :#F28C8F;
 $primaryDark :#A36166;
+$secondary: #564956;
 * {
     padding: 0;
     margin: 0;
     font-family: $nunito;
     overflow: hidden;
-
     li {
         list-style: none;
         a {
             text-decoration: none;
         }
+    }
+    button {
+        cursor: pointer;
     }
 }
 
@@ -119,7 +122,6 @@ header {
     flex-direction: row;
     align-items: center;
     transition: all 2.5s ease;
-    
     ul {
         display: flex;
         flex-direction: row;
@@ -208,7 +210,6 @@ header {
                     color: $primaryDark;
                     min-width: 160px;
                     text-align: center;
-
                 }
             }
             .focus {
@@ -223,13 +224,12 @@ header {
         display: flex;
         flex-direction: row;
         align-content: flex-start;
-        align-items: flex-start; 
+        align-items: flex-start;
         justify-content: center;
         transition: all 2.5s ease;
         .service {
             margin: 0 60px 60px 60px;
             transition: all 2.5s ease;
-
         }
         .psyco {
             transform: translateX(425px)
@@ -242,11 +242,9 @@ header {
             background: #F28C8F;
             .title {
                 color: #FFFFFF;
-
             }
             .description {
                 color: #FFFFFF;
-
             }
         }
     }
@@ -258,7 +256,6 @@ header {
         max-width: 730px;
         min-width: 730px;
         min-height: 309px;
-        
         padding: 40px 40px;
         display: flex;
         flex-direction: column;
@@ -270,7 +267,6 @@ header {
             font-size: 90px;
             color: $primary;
             transition: all 2.5s ease;
-
         }
         .description {
             font-family: $muli;
@@ -280,25 +276,72 @@ header {
             padding: 20px 50px;
             color: $primaryDark;
             transition: all 2.5s ease;
-
         }
     }
     .serviceAdition {
         /* Wanna see more services? Click here */
-
-font-family: $muli;
-font-weight: bold;
-font-size: 16px;
-text-align: center;
-
-color: $primaryDark;
-width: 100vw;
-text-align: center;
-
-         a{
+        font-family: $muli;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        color: $primaryDark;
+        width: 100vw;
+        text-align: center;
+        a {
             text-decoration: none;
             color: $primaryDark;
-         }
+        }
+    }
+    .helpSuperContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 40px 0;
+        .helpContainer {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            .title {
+                min-width: 50%;
+                width: 50%;
+                line-height: 86px;
+                font-size: 90px;
+                color: $secondary;
+                font-weight: bold;
+                text-align: right;
+                margin-right: 20px;
+            }
+            .helpLine {
+                min-width: 50%;
+                width: 50%;
+                background: $secondary;
+                color: #FFFFFF;
+                font-family: $nunito;
+                font-weight: bold;
+                text-align: center;
+                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p.outstanding {
+                    font-size: 36px;
+                }
+                button {
+                    background: $primary;
+                    border: none;
+                    border-radius: 20px;
+                    width: 115px;
+                    color: #fff;
+                    font-family: $nunito;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin: 10px 0;
+                }
+            }
+        }
     }
 }
 
