@@ -9,6 +9,8 @@ $primaryDark :#A36166;
     padding: 0;
     margin: 0;
     font-family: $nunito;
+    overflow: hidden;
+
     li {
         list-style: none;
         a {
@@ -22,8 +24,8 @@ $primaryDark :#A36166;
     flex-wrap: nowrap;
     flex-direction: column;
     width: 100vw;
-    overflow-y: hidden;
     height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -32,7 +34,7 @@ header {
     flex-direction: row;
     min-height: 80px;
     max-height: 80px;
-    /* Rectangle */
+    z-index: 100;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     align-items: center;
@@ -94,6 +96,7 @@ header {
                 .icon {
                     margin: 0 10px;
                     width: 20px;
+                    min-width: 20px;
                     height: 20px;
                     background: #FFFFFF;
                     border-radius: 20px;
@@ -115,6 +118,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: all 2.5s ease;
+    
     ul {
         display: flex;
         flex-direction: row;
@@ -126,6 +131,7 @@ header {
                 .icon {
                     margin: 0 10px;
                     width: 20px;
+                    min-width: 20px;
                     height: 20px;
                     background: $primary;
                     border-radius: 20px;
@@ -148,7 +154,7 @@ header {
     .outstanding {
         height: 100%;
         padding: 0 50px;
-        background: #F28C8F;
+        background: $primary;
         border-radius: 50px 0px 0px 50px;
         font-weight: bold;
         font-size: 18px;
@@ -162,7 +168,142 @@ header {
     width: 100vw;
     overflow-y: scroll;
     .slider {
-        height: 1500px;
         width: 100%;
+        background: gray;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
+    .introduction {
+        margin-top: 40px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .serviceSelector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        .title {
+            font-family: $muli;
+            font-weight: bold;
+            font-size: 16px;
+            color: $primaryDark;
+        }
+        .selectorContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .selector {
+                margin: 20px 10px;
+                background: #E5E5E5;
+                border-radius: 30px;
+                padding: 10px 20px;
+                p {
+                    font-family: $muli;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $primaryDark;
+                    min-width: 160px;
+                    text-align: center;
+
+                }
+            }
+            .focus {
+                background: #F28C8F;
+                p {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .services {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: flex-start; 
+        justify-content: center;
+        transition: all 2.5s ease;
+        .service {
+            margin: 0 60px 60px 60px;
+            transition: all 2.5s ease;
+
+        }
+        .psyco {
+            transform: translateX(425px)
+        }
+        .training {
+            transform: translateX(425px)
+        }
+        .focus {
+            border: 4px solid white;
+            background: #F28C8F;
+            .title {
+                color: #FFFFFF;
+
+            }
+            .description {
+                color: #FFFFFF;
+
+            }
+        }
+    }
+    .infoContainer {
+        box-sizing: border-box;
+        border-radius: 164.5px;
+        border: 4px solid #F28C8F;
+        width: 730px;
+        max-width: 730px;
+        min-width: 730px;
+        min-height: 309px;
+        
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title {
+            font-family: $nunito;
+            font-weight: bold;
+            font-size: 90px;
+            color: $primary;
+            transition: all 2.5s ease;
+
+        }
+        .description {
+            font-family: $muli;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px 50px;
+            color: $primaryDark;
+            transition: all 2.5s ease;
+
+        }
+    }
+    .serviceAdition {
+        /* Wanna see more services? Click here */
+
+font-family: $muli;
+font-weight: bold;
+font-size: 16px;
+text-align: center;
+
+color: $primaryDark;
+width: 100vw;
+text-align: center;
+
+         a{
+            text-decoration: none;
+            color: $primaryDark;
+         }
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 400px;
+    background: $primary;
 }

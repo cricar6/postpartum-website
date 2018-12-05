@@ -9,102 +9,173 @@
 
 </head>
 
-<body>
+<body onresize="updateLowerBarPosition()">
     <div class="contApp">
-            <header>
-                    <div class="logo">
-            
-                    </div>
-                    <div class="menuContainer">
-                        <div class="menu">
-                            <ul>
-                                <li><a class="focus" href="">Home</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
+        <header>
+            <div class="logo">
+
+            </div>
+            <div class="menuContainer">
+                <div class="menu">
+                    <ul>
+                        <li><a class="focus" href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                </div>
+                <button class="outstanding">
+                    Let us help you
+                </button>
+                <div class="socialMedia">
+                    <a href="">
+                        <div class="icon">
 
                         </div>
-                        <button class="outstanding">
-                            Let us help you
-                        </button>
-                        <div class="socialMedia">
-                                <a href="">
-                                    <div class="icon">
-            
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="icon">
-            
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="icon">
-            
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <div class="icon">
-            
-                                    </div>
-                                </a>
-                            </div>
-                    </div>
-                </header>
-                <div class="lowerBar">
-                    <ul>
-                        <li>
-                            <a href="">
-                                    <div class="icon">
-            
-                                    </div>
-                                    <p>
-                                        What is postpartum depression?
-                                    </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-            
-                                    <div class="icon">
-            
-                                    </div>
-                                    <p>
-                                        Common Symptoms
-                                    </p>
-                            </a>
-                        </li>
-            
-                        <li>
-                            <a href="">
-            
-                                    <div class="icon">
-            
-                                    </div>
-                                    <p>
-                                        What causes it?
-                                    </p>
-                            </a>
-                        </li>
-                    </ul>
-                    <button class="outstanding">
-            
-                            Resources
-                        
-                    </button>
-                </div>
-                <div class="app">
-                    <div class="slider">
-            
-                    </div>
-                    <div class="slider">
-            
-                    </div>
-                </div>
-    </div>
-    
+                    </a>
+                    <a href="">
+                        <div class="icon">
 
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="icon">
+
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="icon">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="lowerBar">
+            <button class="outstanding toggler">
+
+                Know more about  +
+
+            </button>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="icon">
+
+                        </div>
+                        <p>
+                            What is postpartum depression?
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+
+                        <div class="icon">
+
+                        </div>
+                        <p>
+                            Common Symptoms
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+
+                        <div class="icon">
+
+                        </div>
+                        <p>
+                            What causes it?
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <button class="outstanding">
+
+                Resources
+
+            </button>
+        </div>
+        <div class="app">
+            <div class="slider">
+            </div>
+            <div class="introduction">
+                <div class="infoContainer introduction">
+                    <p class="title">
+                        Who are we?
+                    </p>
+                    <p class="description">
+                        The Postpartum Healing and Education Center, LLC specializes in treating Prenatal and
+                        Postpartum depression. We also offer counseling in issues such as general depression, anxiety
+                        or grief.
+                    </p>
+                </div>
+            </div>
+
+            <div class="serviceSelector">
+                <p class="title">
+                    As a healing education center we can offer you:
+                </p>
+                <div class="selectorContainer">
+                    <div class="selector psyco focus">
+                        <p>
+                            Psychotherapy
+                        </p>
+                    </div>
+                    <div class="selector training">
+                        <p>
+                            Training
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="infoContainer service psyco focus">
+                    <div class="title">
+                        Psychotherapy
+                    </div>
+                    <p class="description">
+                        Services centered in guiding and educating you through your healing process, such as, parenting
+                        workshops and individual therapy.
+                    </p>
+                </div>
+                <div class="infoContainer service training">
+                    <div class="title">
+                        Training
+                    </div>
+                    <p class="description">
+                        Trainings for professionals seeking to expand their skills and learn more about treating
+                        Postpartum Depression or become a facilitator for the Nurturing Parenting Program.
+                    </p>
+                </div>
+            </div>
+            <p class="serviceAdition">
+                Wanna see more services? </br>
+                <a href="">Click here</a>
+            </p>
+            <div class="helpContainer">
+                <p class="title">
+
+                </p>
+                <div class="helpLine">
+                    <p></p>
+                    <p class="p-outstanding">
+
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+            
+        <footer>
+            
+        </footer>
+        </div>
+    </div>
+
+    <script src="/assets/dist/main.js"></script>
 </body>
 
 </html>
