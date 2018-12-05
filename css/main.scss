@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900|Nunito:400,700,900');
-$nunito: 'Nunito',
-sans-serif;
-$muli: 'Muli',
-sans-serif;
+$nunito: 'Nunito', sans-serif;
+$muli: 'Muli', sans-serif;
 $primary :#F28C8F;
 $primaryDark :#A36166;
 $secondary: #564956;
@@ -168,130 +166,8 @@ header {
 .app {
     position: relative;
     width: 100vw;
-    overflow-y: scroll;
-    .slider {
-        width: 100%;
-        background: gray;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    .introduction {
-        margin-top: 40px;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .serviceSelector {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 40px 0;
-        .title {
-            font-family: $muli;
-            font-weight: bold;
-            font-size: 16px;
-            color: $primaryDark;
-        }
-        .selectorContainer {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            .selector {
-                margin: 20px 10px;
-                background: #E5E5E5;
-                border-radius: 30px;
-                padding: 10px 20px;
-                p {
-                    font-family: $muli;
-                    font-weight: bold;
-                    font-size: 16px;
-                    color: $primaryDark;
-                    min-width: 160px;
-                    text-align: center;
-                }
-            }
-            .focus {
-                background: #F28C8F;
-                p {
-                    color: #FFFFFF;
-                }
-            }
-        }
-    }
-    .services {
-        display: flex;
-        flex-direction: row;
-        align-content: flex-start;
-        align-items: flex-start;
-        justify-content: center;
-        transition: all 2.5s ease;
-        .service {
-            margin: 0 60px 60px 60px;
-            transition: all 2.5s ease;
-        }
-        .psyco {
-            transform: translateX(425px)
-        }
-        .training {
-            transform: translateX(425px)
-        }
-        .focus {
-            border: 4px solid white;
-            background: #F28C8F;
-            .title {
-                color: #FFFFFF;
-            }
-            .description {
-                color: #FFFFFF;
-            }
-        }
-    }
-    .infoContainer {
-        box-sizing: border-box;
-        border-radius: 164.5px;
-        border: 4px solid #F28C8F;
-        width: 730px;
-        max-width: 730px;
-        min-width: 730px;
-        min-height: 309px;
-        padding: 40px 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .title {
-            font-family: $nunito;
-            font-weight: bold;
-            font-size: 90px;
-            color: $primary;
-            transition: all 2.5s ease;
-        }
-        .description {
-            font-family: $muli;
-            font-weight: bold;
-            font-size: 16px;
-            text-align: center;
-            padding: 20px 50px;
-            color: $primaryDark;
-            transition: all 2.5s ease;
-        }
-    }
-    .serviceAdition {
-        /* Wanna see more services? Click here */
-        font-family: $muli;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: center;
-        color: $primaryDark;
-        width: 100vw;
-        text-align: center;
-        a {
-            text-decoration: none;
-            color: $primaryDark;
-        }
-    }
+    overflow-y: scroll;    
+
     .helpSuperContainer {
         width: 100%;
         display: flex;
